@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>
+title
+</title>
+<script src="ajaxAlemoppo.min.js"></script>
+<script>
+function data(param, method)
+{
+	ajaxAlemoppo(window.location.pathname.substring(window.location.pathname.lastIndexOf("/")+1) || "./", method, param, true, function(k) {console.log(k);});
+}
+</script>
+</head>
+<body>
+<button onClick="data('param1=value1&param2=value2', 'get')">get</button>
+<button onClick="data('param1=value1&param2=value2', 'post')">post</button>
+</body>
+</html>
