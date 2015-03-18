@@ -11,7 +11,7 @@ Example:
  * @ method
  * @ parameters
  * @ async (true: async; false: sync)
- * @ callback function 
+ * @ callback function
  
  */
 
